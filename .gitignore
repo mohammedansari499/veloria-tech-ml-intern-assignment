@@ -1,0 +1,30 @@
+# Virtual environment
+.venv/
+
+# VS Code settings
+.vscode/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# HTML files
+*.html
+
+# Test scripts
+Scraper_trial.py
+engtest.py
+howstat_scraper.py
+inspecter1.py
+pseudo_code.py
+scloud scaper.py
+scraper_fewerrors.py
+scrapertest.py
+test1.py
+
+# Temporary files
+response.html
+result_England.html
+parsed_page_England.html
+scorecard2639.html
+england.html
