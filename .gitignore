@@ -3,6 +3,7 @@
 
 # VS Code settings
 .vscode/
+*pyi
 
 # Python cache
 __pycache__/
