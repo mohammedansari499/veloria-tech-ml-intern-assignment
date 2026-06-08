@@ -1,0 +1,208 @@
+Task 1: (Howstat.com web scraper)
+
+(.venv) PS C:\Users\Wahaj Ansari\Desktop\Veloria Tasks> & "c:/Users/Wahaj Ansari/Desktop/Veloria Tasks/.venv/Scripts/python.exe" "c:/Users/Wahaj Ansari/Desktop/Veloria Tasks/scrapperfixed.py"
+00:23:32  INFO     
+00:23:32  INFO     ============================================================
+00:23:32  INFO     COUNTRY: England (ENG)
+00:23:32  INFO     ============================================================
+00:23:32  INFO     Fetching match list for England (ENG)…
+00:23:35  INFO       Found 1096 rows in match table.
+00:23:35  INFO       Selected 10 completed matches (from 1094 candidates).
+00:23:35  INFO       [1/10]  04/01/2026  —  MatchCode 2639
+00:23:35  INFO         Scorecard 2639 …
+00:23:37  INFO           → Australia v England | Australia won by 5 wickets | Top: Travis Head (163)
+00:23:37  INFO       [2/10]  26/12/2025  —  MatchCode 2638
+00:23:37  INFO         Scorecard 2638 …
+00:23:40  INFO           → England110 & 178/6 v Australia | England won by 4 wickets | Top: Travis Head (46)
+00:23:40  INFO       [3/10]  17/12/2025  —  MatchCode 2636
+00:23:40  INFO         Scorecard 2636 …
+00:23:42  INFO           → Australia v England | Australia won by 82 runs | Top: Travis Head (170)
+00:23:42  INFO       [4/10]  04/12/2025  —  MatchCode 2634
+00:23:42  INFO         Scorecard 2634 …
+00:23:44  INFO           → Australia v England | Australia won by 8 wickets | Top: Joe Root (138)
+00:23:44  INFO       [5/10]  21/11/2025  —  MatchCode 2631
+00:23:44  INFO         Scorecard 2631 …
+00:23:46  INFO           → Australia v England | Australia won by 8 wickets | Top: Travis Head (123)
+00:23:46  INFO       [6/10]  31/07/2025  —  MatchCode 2621
+00:23:46  INFO         Scorecard 2621 …
+00:23:49  INFO           → India224 & 396 v England | India won by 6 runs | Top: Yashasvi Jaiswal (118)
+00:23:49  INFO       [7/10]  23/07/2025  —  MatchCode 2619
+00:23:49  INFO         Scorecard 2619 …
+00:23:51  INFO           → N/A v N/A | Match drawn | Top: Joe Root (150)
+00:23:51  INFO       [8/10]  10/07/2025  —  MatchCode 2617
+00:23:51  INFO         Scorecard 2617 …
+00:23:53  INFO           → England v India | England won by 22 runs | Top: Joe Root (104)
+00:23:53  INFO       [9/10]  02/07/2025  —  MatchCode 2614
+00:23:53  INFO         Scorecard 2614 …
+00:23:56  INFO           → India587 & 427/6 dec v England | India won by 336 runs | Top: Shubman Gill* (269)
+00:23:56  INFO       [10/10]  20/06/2025  —  MatchCode 2610
+00:23:56  INFO         Scorecard 2610 …
+00:23:58  INFO           → England v India | England won by 5 wickets | Top: Ben Duckett (149)
+00:23:58  INFO     Done. 10 rows for England.
+00:23:58  INFO     
+00:23:58  INFO     ============================================================
+00:23:58  INFO     COUNTRY: India (IND)
+00:23:58  INFO     ============================================================
+00:23:58  INFO     Fetching match list for India (IND)…
+00:24:00  INFO       Found 600 rows in match table.
+00:24:00  INFO       Selected 10 completed matches (from 598 candidates).
+00:24:00  INFO       [1/10]  22/11/2025  —  MatchCode 2632
+00:24:00  INFO         Scorecard 2632 …
+00:24:03  INFO           → South Africa489 & 260/5 dec v India | South Africa won by 408 runs | Top: Senuran Muthusamy (109)
+00:24:03  INFO       [2/10]  14/11/2025  —  MatchCode 2629
+00:24:03  INFO         Scorecard 2629 …
+00:24:06  INFO           → South Africa159 & 153 v India | South Africa won by 30 runs | Top: Temba Bavuma* (55)
+00:24:06  INFO       [3/10]  10/10/2025  —  MatchCode 2624
+00:24:06  INFO         Scorecard 2624 …
+00:24:08  INFO           → India v West Indies | India won by 7 wickets | Top: Yashasvi Jaiswal (175)
+00:24:08  INFO       [4/10]  02/10/2025  —  MatchCode 2623
+00:24:08  INFO         Scorecard 2623 …
+00:24:10  INFO           → India v West Indies | India won by an innings and 140 runs | Top: Dhruv Jurel† (125)
+00:24:10  INFO       [5/10]  31/07/2025  —  MatchCode 2621
+00:24:10  INFO         Scorecard 2621 …
+00:24:13  INFO           → India224 & 396 v England | India won by 6 runs | Top: Yashasvi Jaiswal (118)
+00:24:13  INFO       [6/10]  23/07/2025  —  MatchCode 2619
+00:24:13  INFO         Scorecard 2619 …
+00:24:15  INFO           → N/A v N/A | Match drawn | Top: Joe Root (150)
+00:24:15  INFO       [7/10]  10/07/2025  —  MatchCode 2617
+00:24:15  INFO         Scorecard 2617 …
+00:24:17  INFO           → England v India | England won by 22 runs | Top: Joe Root (104)
+00:24:17  INFO       [8/10]  02/07/2025  —  MatchCode 2614
+00:24:17  INFO         Scorecard 2614 …
+00:24:20  INFO           → India587 & 427/6 dec v England | India won by 336 runs | Top: Shubman Gill* (269)
+00:24:20  INFO       [9/10]  20/06/2025  —  MatchCode 2610
+00:24:20  INFO         Scorecard 2610 …
+00:24:22  INFO           → England v India | England won by 5 wickets | Top: Ben Duckett (149)
+00:24:22  INFO       [10/10]  03/01/2025  —  MatchCode 2598
+00:24:22  INFO         Scorecard 2598 …
+00:24:26  INFO           → Australia v India | Australia won by 6 wickets | Top: Rishabh Pant† (61)
+00:24:26  INFO     Done. 10 rows for India.
+00:24:26  INFO     
+00:24:26  INFO     Saved 20 rows → match_data.csv
+
+================================================================================
+  England — Last 10 Completed Test Matches
+================================================================================
+ Sl No. Match Date               Team 1    Team 2             Stadium Name Stadium Location               Match Result  Top Scorer Name  Top Scorer Runs
+      1 04/01/2026            Australia   England    Sydney Cricket Ground           Sydney Australia won by 5 wickets      Travis Head              163
+      2 26/12/2025   England110 & 178/6 Australia Melbourne Cricket Ground        Melbourne   England won by 4 wickets      Travis Head               46
+      3 17/12/2025            Australia   England            Adelaide Oval         Adelaide   Australia won by 82 runs      Travis Head              170
+      4 04/12/2025            Australia   England  Brisbane Cricket Ground         Brisbane Australia won by 8 wickets         Joe Root              138
+      5 21/11/2025            Australia   England            Perth Stadium            Perth Australia won by 8 wickets      Travis Head              123
+      6 31/07/2025       India224 & 396   England          Kennington Oval           London        India won by 6 runs Yashasvi Jaiswal              118
+      7 23/07/2025                  N/A       N/A             Old Trafford       Manchester                Match drawn         Joe Root              150
+      8 10/07/2025              England     India                   Lord's           London     England won by 22 runs         Joe Root              104
+      9 02/07/2025 India587 & 427/6 dec   England                Edgbaston       Birmingham      India won by 336 runs    Shubman Gill*              269
+     10 20/06/2025              England     India               Headingley            Leeds   England won by 5 wickets      Ben Duckett              149
+
+================================================================================
+  India — Last 10 Completed Test Matches
+================================================================================
+ Sl No. Match Date                      Team 1      Team 2              Stadium Name Stadium Location                         Match Result   Top Scorer Name  Top Scorer Runs
+      1 22/11/2025 South Africa489 & 260/5 dec       India Barsapara Cricket Stadium         Guwahati         South Africa won by 408 runs Senuran Muthusamy              109
+      2 14/11/2025       South Africa159 & 153       India              Eden Gardens          Kolkata          South Africa won by 30 runs     Temba Bavuma*               55
+      3 10/10/2025                       India West Indies      Arun Jaitley Stadium            Delhi               India won by 7 wickets  Yashasvi Jaiswal              175
+      4 02/10/2025                       India West Indies     Narendra Modi Stadium        Ahmedabad India won by an innings and 140 runs      Dhruv Jurel†              125
+      5 31/07/2025              India224 & 396     England           Kennington Oval           London                  India won by 6 runs  Yashasvi Jaiswal              118
+      6 23/07/2025                         N/A         N/A              Old Trafford       Manchester                          Match drawn          Joe Root              150
+      7 10/07/2025                     England       India                    Lord's           London               England won by 22 runs          Joe Root              104
+      8 02/07/2025        India587 & 427/6 dec     England                 Edgbaston       Birmingham                India won by 336 runs     Shubman Gill*              269
+      9 20/06/2025                     England       India                Headingley            Leeds             England won by 5 wickets       Ben Duckett              149
+     10 03/01/2025                   Australia       India     Sydney Cricket Ground           Sydney           Australia won by 6 wickets     Rishabh Pant†               61
+
+Saved to match_data.csv
+
+
+
+
+
+TASK 2: Cricket Prediction Model
+
+(.venv) PS C:\Users\Wahaj Ansari\Desktop\Veloria Tasks> & "c:/Users/Wahaj Ansari/Desktop/Veloria Tasks/.venv/Scripts/python.exe" "c:/Users/Wahaj Ansari/Desktop/Veloria Tasks/Task 2/model.py"
+
+============================================================
+CRICKET MATCH WINNER PREDICTION MODEL
+============================================================
+
+[1/4] Loading data from 'Task 2\cricket_data.csv' ...
+      Raw shape: 104,620 rows × 65 columns
+      After 2020-2026 filter: 104,620 rows
+      After cleaning: 104,620 rows
+      Unique match winners: 13
+
+      Features used (11): ['batting_team_enc', 'bowling_team_enc', 'venue_enc', 'toss_winner_enc', 'toss_decision_enc', 'innings', 'over', 'runs_total', 'team_runs', 'team_wicket', 'team_balls']
+
+[2/4] Splitting data and training Random Forest ...
+      Train size: 83,696  |  Test size: 20,924
+      Model trained successfully.
+
+[3/4] Evaluating model on test set ...
+
+============================================================
+EVALUATION RESULTS
+============================================================
+  Accuracy Score : 0.9665  (96.65%)
+  F1 Score (wtd) : 0.9665
+
+  Confusion Matrix:
+  (Rows = Actual, Columns = Predicted)
+                             Chennai Super Kings  Delhi Capitals  Gujarat Titans  Kings XI Punjab  Kolkata Knight Riders  Lucknow Super Giants  Mumbai Indians  Punjab Kings  Rajasthan Royals  Royal Challengers Bangalore  Royal Challengers Bengaluru  Sunrisers Hyderabad  Unknown
+Chennai Super Kings                         2076               2              16                0                      3                    12              26             8                 0                            4                            0                    6        7
+Delhi Capitals                                 4            1992              36                0                     15                     0               7             0                 0                           31                           12                    0       20
+Gujarat Titans                                 6               0            1860                0                      0                     0               0             0                32                            0                            0                    0        0
+Kings XI Punjab                                0               0               0              242                      0                     0               0             0                 0                            0                            0                    0        0
+Kolkata Knight Riders                         12              23               0                0                   1873                    47              13             0                 1                           26                           15                    0        7
+Lucknow Super Giants                           2              40               0                0                      0                  1519               0             0                 0                            0                           24                    0        0
+Mumbai Indians                                 0              34              13                0                      0                     0            2021            20                15                            0                           18                    7        0
+Punjab Kings                                   2               0               0                0                      0                     0               0          1824                 0                            0                            1                    1        0
+Rajasthan Royals                               0               0              14                0                      0                     0              33             0              2125                            5                            0                    0        0
+Royal Challengers Bangalore                    6               1               0                0                      0                     0               0             0                 0                         1472                            0                    0       23
+Royal Challengers Bengaluru                    0               0               0                0                      0                     0               0             0                 0                            0                         1037                    2        0
+Sunrisers Hyderabad                            6               0               0                0                      0                     0              36             0                 0                            0                            7                 1779        0
+Unknown                                        0               0               0                0                      0                     0               0             0                 0                            0                            0                    0      403
+
+  Classification Report:
+                             precision    recall  f1-score   support
+
+        Chennai Super Kings       0.98      0.96      0.97      2160
+             Delhi Capitals       0.95      0.94      0.95      2117
+             Gujarat Titans       0.96      0.98      0.97      1898
+            Kings XI Punjab       1.00      1.00      1.00       242
+      Kolkata Knight Riders       0.99      0.93      0.96      2017
+       Lucknow Super Giants       0.96      0.96      0.96      1585
+             Mumbai Indians       0.95      0.95      0.95      2128
+               Punjab Kings       0.98      1.00      0.99      1828
+           Rajasthan Royals       0.98      0.98      0.98      2177
+Royal Challengers Bangalore       0.96      0.98      0.97      1502
+Royal Challengers Bengaluru       0.93      1.00      0.96      1039
+        Sunrisers Hyderabad       0.99      0.97      0.98      1828
+                    Unknown       0.88      1.00      0.93       403
+
+                   accuracy                           0.97     20924
+                  macro avg       0.96      0.97      0.97     20924
+               weighted avg       0.97      0.97      0.97     20924
+
+[4/4] Feature Importances:
+  batting_team_enc       0.2177  █████████████████
+  bowling_team_enc       0.2164  █████████████████
+  venue_enc              0.2108  ████████████████
+  toss_winner_enc        0.1791  ██████████████
+  team_wicket            0.0480  ███
+  team_runs              0.0366  ██
+  innings                0.0297  ██
+  toss_decision_enc      0.0283  ██
+  team_balls             0.0183  █
+  over                   0.0118  
+  runs_total             0.0032  
+
+============================================================
+SUMMARY
+============================================================
+  Algorithm : Random Forest (n_estimators=200, max_depth=15)
+  Seasons   : 2020 – 2026
+  Samples   : 104,620 balls (train=83,696, test=20,924)
+  Features  : 11
+  Accuracy  : 96.65%
+  F1 Score  : 0.9665
+============================================================
+(.venv) PS C:\Users\Wahaj Ansari\Desktop\Veloria Tasks>
