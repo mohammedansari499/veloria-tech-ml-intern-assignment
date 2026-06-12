@@ -278,62 +278,46 @@ def fetch_scorecard(match_code: str) -> dict:
         "top_scorer_runs":  0,
     }
 
-    # ── Venue ──────────────────────────────────────────────────────────────────
-    header_div = soup.find(class_=re.compile(r'scorecard[-_]?header', re.I))
-    if header_div:
-        venue_full = header_div.get_text(strip=True)
-        parts = venue_full.split(",", 1)
-        result["stadium_name"]     = parts[0].strip()
-        result["stadium_location"] = parts[1].strip() if len(parts) > 1 else ""
+    # ===== HOWSTAT HEADER PARSING =====
 
-    # ── Teams and match date ───────────────────────────────────────────────────
-    top_grid = soup.find(class_=re.compile(r'scorecard[-_]?top[-_]?grid', re.I))
-    if top_grid:
-        # Team names
-        team_tags = top_grid.find_all(class_=re.compile(r'team[-_]?name', re.I))
-        if len(team_tags) >= 2:
-            result["team1"] = team_tags[0].get_text(strip=True)
-            result["team2"] = team_tags[1].get_text(strip=True)
-        else:
-            # Fallback: grab all text chunks and infer
-            texts = [t.strip() for t in top_grid.stripped_strings if t.strip() and t.strip() != "v"]
-            if len(texts) >= 2:
-                result["team1"] = texts[0]
-                result["team2"] = texts[1]
+    heading_dark = soup.find(class_="FormHeadingDark")
 
-        # Date
-        date_tag = top_grid.find(class_=re.compile(r'(match[-_]?date|date)', re.I))
-        if date_tag:
-            result["match_date"] = date_tag.get_text(strip=True)
-        else:
-            # Look for a string that looks like a date
-            for chunk in top_grid.stripped_strings:
-                if re.search(r'\d{4}', chunk):
-                    result["match_date"] = chunk.strip()
-                    break
+    if heading_dark:
+        heading_text = heading_dark.get_text(" ", strip=True)
 
-    # ── Match result ───────────────────────────────────────────────────────────
-    result_tag = (
-        soup.find(id=re.compile(r'result', re.I))
-        or soup.find(class_=re.compile(r'result', re.I))
-    )
-    if result_tag:
-        result["match_result"] = result_tag.get_text(strip=True)
+        result["stadium_name"] = heading_text
 
-    # ── Top scorer: scan ALL scorecard-bat-grid divs ───────────────────────────
-    bat_grids = soup.find_all(class_=re.compile(r'scorecard[-_]?bat[-_]?grid', re.I))
+        m = re.search(
+            r'([A-Za-z ]+?)\s+v\.?\s+([A-Za-z ]+?)(?:\s*-\s*|\s+\d)',
+            heading_text
+        )
 
-    if not bat_grids:
-        # Wider fallback: any table on the page that looks like a batting table
-        bat_grids = []
-        for tbl in soup.find_all("table"):
-            header = tbl.find("tr")
-            if header:
-                headers_text = header.get_text().lower()
-                if "runs" in headers_text or " r " in headers_text:
-                    bat_grids.append(tbl)
+        if m:
+            result["team1"] = m.group(1).strip()
+            result["team2"] = m.group(2).strip()
 
-    overall_best_name = "N/A"
+        # ── Match result ───────────────────────────────────────────────────────────
+        result_tag = (
+            soup.find(id=re.compile(r'result', re.I))
+            or soup.find(class_=re.compile(r'result', re.I))
+        )
+        if result_tag:
+            result["match_result"] = result_tag.get_text(strip=True)
+
+        # ── Top scorer: scan ALL scorecard-bat-grid divs ───────────────────────────
+        bat_grids = soup.find_all(class_=re.compile(r'scorecard[-_]?bat[-_]?grid', re.I))
+
+        if not bat_grids:
+            # Wider fallback: any table on the page that looks like a batting table
+            bat_grids = []
+            for tbl in soup.find_all("table"):
+                header = tbl.find("tr")
+                if header:
+                    headers_text = header.get_text().lower()
+                    if "runs" in headers_text or " r " in headers_text:
+                        bat_grids.append(tbl)
+
+        overall_best_name = "N/A"
     overall_best_runs = 0
 
     for grid in bat_grids:
